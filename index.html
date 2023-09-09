@@ -62,7 +62,13 @@
                 send you spam or pass on your email address
             </p>
             
-            <button type="submit" class="btn-form">Subscribe</button>
+            <form action="" novalidate class="form-subscribe">
+                <label for="email" class="visually-hidden">Email Address</label>
+                <input type="email" name="email" id="email" class="form-subscribe__input">
+                <p class="hidden error-msg">Check your email please</p>
+                <button type="submit" class="btn-form form-subscribe__btn">Subscribe</button>
+            </form>
+            
 
             <p class="foot-note">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 

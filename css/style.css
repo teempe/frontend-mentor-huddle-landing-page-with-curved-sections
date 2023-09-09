@@ -34,6 +34,7 @@ body {
   font-weight: var(--fw-regular);
   font-size: 1.4rem;
   line-height: 1.5em;
+  color: var(--color-very-dark-cyan);
   display: grid;
   justify-content: center;
   align-content: center;
@@ -64,6 +65,24 @@ body {
 .foot-note {
   font-weight: var(--fw-semi-bold);
   line-height: 2.4rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  opacity: 0;
+  pointer-events: none;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.hidden {
+  display: none;
 }
 
 .btn-form, .btn-secondary, .btn-primary {
@@ -114,6 +133,42 @@ body {
 }
 .btn-form:hover, .btn-form:active {
   background-color: var(--color-light-pink);
+}
+
+.form-subscribe {
+  background-color: bisque;
+  display: grid;
+  grid-template-columns: repeat(2, 16rem);
+  grid-template-rows: repeat(2, 4.8rem);
+  row-gap: 1.6rem;
+  position: relative;
+}
+.form-subscribe__input {
+  grid-row: 1/2;
+  grid-column: 1/-1;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 2.4rem;
+  color: inherit;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  padding-left: 1.6rem;
+}
+.form-subscribe__btn {
+  grid-row: 2/3;
+  grid-column: 2/-1;
+}
+.form-subscribe--error input[type=email] {
+  border: 0.1rem solid var(--color-light-red);
+}
+.form-subscribe--error input[type=email] + .error-msg {
+  font-weight: var(--fw-semi-bold);
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  color: var(--color-light-red);
+  position: absolute;
+  top: 5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

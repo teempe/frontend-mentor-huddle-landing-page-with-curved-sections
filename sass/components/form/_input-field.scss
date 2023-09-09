@@ -1,0 +1,12 @@
+@mixin input-field {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: 2.4rem;
+    color: inherit;
+
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+
+    padding-left: 1.6rem;
+}

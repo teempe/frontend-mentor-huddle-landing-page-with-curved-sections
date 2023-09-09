@@ -1,0 +1,40 @@
+@import 'input-field';
+
+
+.form-subscribe {
+    background-color: bisque;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 16rem);
+    grid-template-rows: repeat(2, 4.8rem);
+    row-gap: 1.6rem;
+
+    position: relative;
+
+    &__input {
+        grid-row: 1 / 2;
+        grid-column: 1 / -1;
+        @include input-field;
+    }
+
+    &__btn {
+        grid-row: 2 / 3;
+        grid-column: 2 / -1;
+    }
+
+    &--error input[type="email"] {
+        border: 0.1rem solid var(--color-light-red);
+    }
+
+    &--error input[type="email"] + .error-msg {
+        font-weight: var(--fw-semi-bold);
+        font-size: 1.2rem;
+        line-height: 2.4rem;
+        color: var(--color-light-red);
+
+        position: absolute;
+        top: 5rem;
+    }
+
+}
+
