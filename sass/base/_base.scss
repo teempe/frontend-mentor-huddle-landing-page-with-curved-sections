@@ -35,6 +35,11 @@ html {
 }
 
 body {
+    font-family: var(--ff-base);
+    font-weight: var(--fw-regular);
+    font-size: 1.4rem;
+    line-height: 1.5em;
+    
     // center content on page
     display: grid;
     justify-content: center;
