@@ -11,6 +11,7 @@
   --color-very-dark-cyan: hsl(192, 100%, 9%);
   --color-cyan-shadow: hsla(192, 100%, 9%, 0.22);
   --color-very-pale-blue: hsl(207, 100%, 98%);
+  --color-grey: hsl(208, 12%, 55%);
   --color-white: hsl(0, 0%, 100%);
 }
 
@@ -169,6 +170,52 @@ body {
   color: var(--color-light-red);
   position: absolute;
   top: 5rem;
+}
+
+.stat-card {
+  display: grid;
+  justify-items: center;
+}
+.stat-card__icon {
+  justify-self: start;
+}
+.stat-card__value {
+  font-weight: var(--fw-bold);
+  line-height: 1.5em;
+}
+.stat-card__description {
+  color: var(--color-grey);
+  line-height: 1.5em;
+}
+.stat-card--communities {
+  grid-template-rows: 2.5rem repeat(2, min-content);
+}
+.stat-card--communities img {
+  width: 3.5rem;
+}
+.stat-card--communities p:first-of-type {
+  font-size: 6.1rem;
+}
+.stat-card--communities p:last-of-type {
+  font-size: 1.5rem;
+}
+.stat-card--messages {
+  grid-template-rows: 2.1rem repeat(2, min-content);
+}
+.stat-card--messages img {
+  width: 2.7rem;
+}
+.stat-card--messages p:first-of-type {
+  font-size: 5.4rem;
+}
+.stat-card--messages p:last-of-type {
+  font-size: 1.4rem;
+}
+
+.stat-cards {
+  display: grid;
+  justify-content: center;
+  row-gap: 9.1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
