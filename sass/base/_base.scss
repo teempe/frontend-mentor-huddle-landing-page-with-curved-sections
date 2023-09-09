@@ -8,12 +8,15 @@
 
     // Colors Primary
     --color-pink: hsl(322, 100%, 66%);
+    --color-pink-shadow: hsla(322, 100%, 66%, 0.22);
     --color-light-pink: hsl(321, 100%, 78%);
     --color-light-red: hsl(0, 100%, 63%);
 
     // Colors Neutral
     --color-very-dark-cyan: hsl(192, 100%, 9%);
+    --color-cyan-shadow: hsla(192, 100%, 9%, 0.22);
     --color-very-pale-blue: hsl(207, 100%, 98%);
+    --color-white: hsl(0, 0%, 100%);
 }
 
 // Breakpoints
