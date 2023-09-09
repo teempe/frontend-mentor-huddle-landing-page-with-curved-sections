@@ -1,0 +1,45 @@
+:root {
+    --ff-base: 'Open Sans', sans-serif;
+    --ff-head: 'Poppins', sans-serif;
+
+    --fw-regular: 400;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+
+    // Colors Primary
+    --color-pink: hsl(322, 100%, 66%);
+    --color-light-pink: hsl(321, 100%, 78%);
+    --color-light-red: hsl(0, 100%, 63%);
+
+    // Colors Neutral
+    --color-very-dark-cyan: hsl(192, 100%, 9%);
+    --color-very-pale-blue: hsl(207, 100%, 98%);
+}
+
+// Breakpoints
+$bp-desktop: 90em; // 1440px
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    // center content on page
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    
+    overflow-x: hidden;
+}
