@@ -1,0 +1,16 @@
+{
+  "name": "frontend-mentor-huddle-landing-page-with-curved-sections",
+  "version": "1.0.0",
+  "description": "Frontend Mentor - Huddle landing page with curved sections",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass sass/main.scss css/style.css -w",
+    "compile:sass": "sass sass/main.scss css/style.css"
+  },
+  "keywords": [],
+  "author": "teempe",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.66.1"
+  }
+}

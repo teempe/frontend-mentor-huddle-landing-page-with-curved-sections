@@ -1,0 +1,11 @@
+# Avoid accidental upload of the design files
+design/
+*.sketch
+*.fig
+*.xd
+
+.DS_Store
+.prettierignore
+.prettierrc
+node_modules/
+tmp/
