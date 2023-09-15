@@ -291,7 +291,22 @@ body {
 }
 
 .hero {
-  background-color: bisque;
+  background-color: var(--color-white);
+  padding: 8.85rem 3.95rem 11.4rem;
+  text-align: center;
+}
+.hero__header {
+  margin-bottom: 10.4rem;
+}
+.hero__header > .heading-1 {
+  margin-bottom: 2.4rem;
+}
+.hero__header > p {
+  margin-bottom: 4.8rem;
+}
+.hero__illustration {
+  width: 100%;
+  margin-bottom: 12rem;
 }
 
 .grow {
