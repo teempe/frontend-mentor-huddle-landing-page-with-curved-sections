@@ -11,6 +11,7 @@
   --color-very-dark-cyan: hsl(192, 100%, 9%);
   --color-cyan-shadow: hsla(192, 100%, 9%, 0.22);
   --color-very-pale-blue: hsl(207, 100%, 98%);
+  --color-icon-active: hsl(192, 100%, 49%);
   --color-grey: hsl(208, 12%, 55%);
   --color-white: hsl(0, 0%, 100%);
 }
@@ -216,6 +217,48 @@ body {
   display: grid;
   justify-content: center;
   row-gap: 9.1rem;
+}
+
+.contact-link {
+  text-decoration: none;
+  line-height: 2.4rem;
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  column-gap: 1.6rem;
+}
+.contact-link::before {
+  content: "";
+  width: 2.4rem;
+  height: 2.4rem;
+  display: inline-block;
+}
+.contact-link--tel::before {
+  background: no-repeat center url("../images/icon-phone.svg");
+}
+.contact-link--mail::before {
+  background: no-repeat center url("../images/icon-email.svg");
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 1.7rem;
+}
+.social-links .social-link {
+  list-style-type: none;
+}
+.social-links .social-link__link:link, .social-links .social-link__link:visited {
+  text-decoration: none;
+  color: var(--color-white);
+  transition: color 0.25s ease-out;
+}
+.social-links .social-link__link:hover, .social-links .social-link__link:active {
+  color: var(--color-icon-active);
+}
+.social-links .social-link__icon {
+  font-size: 2.3rem;
+  color: currentcolor;
 }
 
 /*# sourceMappingURL=style.css.map */
