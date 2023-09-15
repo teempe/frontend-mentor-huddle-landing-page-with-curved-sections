@@ -1,6 +1,7 @@
 .grow {
     background-color: var(--color-very-pale-blue);
     padding: 10.2rem 0rem 8.1rem;
+    position: relative;
 
     &__illustration {
         width: 25.9rem;
@@ -8,4 +9,22 @@
     }
 
     &__content {}
+
+    &::before {
+        content: "";
+        background: url('../../images/bg-section-top-mobile-1.svg');
+        width: 100%;
+        height: 11.2rem;
+        position: absolute;
+        top: -11.2rem;
+    }
+
+    &::after {
+        content: "";
+        background: url('../../images/bg-section-bottom-mobile-1.svg');
+        width: 100%;
+        height: 5.2rem;
+        position: absolute;
+        bottom: -5.2rem;
+    }
 }

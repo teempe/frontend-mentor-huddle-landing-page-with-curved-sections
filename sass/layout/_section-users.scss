@@ -1,6 +1,7 @@
 .users {
     background-color: var(--color-very-pale-blue);
     padding: 1.6rem 0rem 17.2rem;
+    position: relative;
 
     &__illustration {
         width: 26.7rem;
@@ -8,4 +9,22 @@
     }
 
     &__content {}
+
+    &::before {
+        content: "";
+        background: url('../../images/bg-section-top-mobile-2.svg');
+        width: 100%;
+        height: 10.3rem;
+        position: absolute;
+        top: -10.3rem;
+    }
+
+    &::after {
+        content: "";
+        background: url('../../images/bg-section-bottom-mobile-2.svg');
+        width: 100%;
+        height: 10.1rem;
+        position: absolute;
+        bottom: -10.1rem;
+    }
 }

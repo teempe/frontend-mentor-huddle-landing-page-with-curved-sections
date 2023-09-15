@@ -312,11 +312,29 @@ body {
 .grow {
   background-color: var(--color-very-pale-blue);
   padding: 10.2rem 0rem 8.1rem;
+  position: relative;
 }
 .grow__illustration {
   width: 25.9rem;
   margin-bottom: 7.4rem;
 }
+.grow::before {
+  content: "";
+  background: url("../../images/bg-section-top-mobile-1.svg");
+  width: 100%;
+  height: 11.2rem;
+  position: absolute;
+  top: -11.2rem;
+}
+.grow::after {
+  content: "";
+  background: url("../../images/bg-section-bottom-mobile-1.svg");
+  width: 100%;
+  height: 5.2rem;
+  position: absolute;
+  bottom: -5.2rem;
+}
+
 .conversation {
   background-color: var(--color-white);
   padding: 16.5rem 0rem 22.3rem;
@@ -328,11 +346,29 @@ body {
 .users {
   background-color: var(--color-very-pale-blue);
   padding: 1.6rem 0rem 17.2rem;
+  position: relative;
 }
 .users__illustration {
   width: 26.7rem;
   margin-bottom: 7.9rem;
 }
+.users::before {
+  content: "";
+  background: url("../../images/bg-section-top-mobile-2.svg");
+  width: 100%;
+  height: 10.3rem;
+  position: absolute;
+  top: -10.3rem;
+}
+.users::after {
+  content: "";
+  background: url("../../images/bg-section-bottom-mobile-2.svg");
+  width: 100%;
+  height: 10.1rem;
+  position: absolute;
+  bottom: -10.1rem;
+}
+
 .cta {
   background-color: var(--color-white);
   padding: 10.8rem 0rem 30.4rem;
