@@ -54,4 +54,8 @@ body {
     min-height: 100vh;
     
     overflow-x: hidden;
+
+    @include media-screen-min($bp-desktop) {
+        font-size: 1.6rem;
+    }
 }
