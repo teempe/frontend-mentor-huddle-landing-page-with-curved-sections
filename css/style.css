@@ -137,42 +137,6 @@ body {
   background-color: var(--color-light-pink);
 }
 
-.form-subscribe {
-  background-color: bisque;
-  display: grid;
-  grid-template-columns: repeat(2, 16rem);
-  grid-template-rows: repeat(2, 4.8rem);
-  row-gap: 1.6rem;
-  position: relative;
-}
-.form-subscribe__input {
-  grid-row: 1/2;
-  grid-column: 1/-1;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: 2.4rem;
-  color: inherit;
-  border: none;
-  outline: none;
-  border-radius: 0.5rem;
-  padding-left: 1.6rem;
-}
-.form-subscribe__btn {
-  grid-row: 2/3;
-  grid-column: 2/-1;
-}
-.form-subscribe--error input[type=email] {
-  border: 0.1rem solid var(--color-light-red);
-}
-.form-subscribe--error input[type=email] + .error-msg {
-  font-weight: var(--fw-semi-bold);
-  font-size: 1.2rem;
-  line-height: 2.4rem;
-  color: var(--color-light-red);
-  position: absolute;
-  top: 5rem;
-}
-
 .stat-card {
   display: grid;
   justify-items: center;
@@ -219,6 +183,41 @@ body {
   row-gap: 9.1rem;
 }
 
+.form-subscribe {
+  display: grid;
+  grid-template-columns: repeat(2, 16rem);
+  grid-template-rows: repeat(2, 4.8rem);
+  row-gap: 1.6rem;
+  position: relative;
+}
+.form-subscribe__input {
+  grid-row: 1/2;
+  grid-column: 1/-1;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 2.4rem;
+  color: inherit;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  padding-left: 1.6rem;
+}
+.form-subscribe__btn {
+  grid-row: 2/3;
+  grid-column: 2/-1;
+}
+.form-subscribe--error input[type=email] {
+  border: 0.1rem solid var(--color-light-red);
+}
+.form-subscribe--error input[type=email] + .error-msg {
+  font-weight: var(--fw-semi-bold);
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  color: var(--color-light-red);
+  position: absolute;
+  top: 5rem;
+}
+
 .contact-link {
   text-decoration: none;
   line-height: 2.4rem;
@@ -259,6 +258,34 @@ body {
 .social-links .social-link__icon {
   font-size: 2.3rem;
   color: currentcolor;
+}
+
+.header {
+  background-color: beige;
+}
+
+.hero {
+  background-color: bisque;
+}
+
+.grow {
+  background-color: var(--color-very-pale-blue);
+}
+
+.conversation {
+  background-color: bisque;
+}
+
+.users {
+  background-color: var(--color-very-pale-blue);
+}
+
+.cta {
+  background-color: bisque;
+}
+
+.footer {
+  background-color: var(--color-very-dark-cyan);
 }
 
 /*# sourceMappingURL=style.css.map */

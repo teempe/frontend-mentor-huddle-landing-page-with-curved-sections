@@ -1,8 +1,3 @@
-@import 'base/base';
-@import 'base/typography';
-@import 'utils/utils';
-@import 'components/buttons';
-@import 'components/form/form';
-@import 'components/stat-cards/stat-cards';
-@import 'components/contact-link';
-@import 'components/social-links';
+@import 'base/global';
+@import 'components/global';
+@import 'layout/global';

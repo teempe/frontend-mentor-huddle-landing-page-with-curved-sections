@@ -1,9 +1,7 @@
 @import 'input-field';
 
 
-.form-subscribe {
-    background-color: bisque;
-    
+.form-subscribe {    
     display: grid;
     grid-template-columns: repeat(2, 16rem);
     grid-template-rows: repeat(2, 4.8rem);
