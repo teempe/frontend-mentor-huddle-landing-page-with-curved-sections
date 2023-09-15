@@ -37,6 +37,7 @@ body {
   font-size: 1.4rem;
   line-height: 1.5em;
   color: var(--color-very-dark-cyan);
+  background-color: var(--color-very-pale-blue);
   display: grid;
   justify-content: center;
   align-content: center;
@@ -258,6 +259,11 @@ body {
 .social-links .social-link__icon {
   font-size: 2.3rem;
   color: currentcolor;
+}
+
+.container {
+  max-width: 37.5rem;
+  overflow-x: hidden;
 }
 
 .header {
