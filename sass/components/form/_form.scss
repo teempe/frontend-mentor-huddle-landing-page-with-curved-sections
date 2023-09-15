@@ -34,5 +34,20 @@
         top: 5rem;
     }
 
+    @include media-screen-min($bp-desktop) {
+        grid-template-columns: 32rem 16rem;
+        grid-template-rows: 4.8rem;
+        column-gap: 4rem;
+
+        &__input {
+            grid-row: 1 / 1;
+            grid-column: 1 / 2;
+        }
+    
+        &__btn {
+            grid-row: 1 / 1;
+            grid-column: 2 / -1;
+        }
+    }
 }
 
