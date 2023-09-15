@@ -96,6 +96,7 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
+  display: inline-block;
 }
 
 .btn-primary:link, .btn-primary:visited {
@@ -292,7 +293,7 @@ body {
 
 .hero {
   background-color: var(--color-white);
-  padding: 8.85rem 3.95rem 11.4rem;
+  padding: 8.8rem 3.95rem 13.2rem;
   text-align: center;
 }
 .hero__header {
@@ -311,7 +312,7 @@ body {
 
 .grow {
   background-color: var(--color-very-pale-blue);
-  padding: 10.2rem 0rem 8.1rem;
+  padding: 8.4rem 0rem 5.4rem;
   position: relative;
 }
 .grow__illustration {
@@ -337,7 +338,7 @@ body {
 
 .conversation {
   background-color: var(--color-white);
-  padding: 16.5rem 0rem 22.3rem;
+  padding: 19rem 0rem 22.3rem;
 }
 .conversation__illustration {
   width: 26.6rem;
@@ -345,7 +346,7 @@ body {
 }
 .users {
   background-color: var(--color-very-pale-blue);
-  padding: 1.6rem 0rem 17.2rem;
+  padding: 1.6rem 0rem 11.4rem;
   position: relative;
 }
 .users__illustration {
@@ -371,7 +372,7 @@ body {
 
 .cta {
   background-color: var(--color-white);
-  padding: 10.8rem 0rem 30.4rem;
+  padding: 16.7rem 0rem 30.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
