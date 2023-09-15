@@ -9,7 +9,7 @@
         &__link:link,
         &__link:visited {
             text-decoration: none;
-            color: var(--color-white); // white
+            color: var(--color-white);
             transition: color 0.25s ease-out;
         }
     
@@ -21,6 +21,16 @@
         &__icon {
             font-size: 2.3rem;
             color: currentcolor;
+        }
+    }
+
+    @include media-screen-min($bp-desktop) {
+        gap: 2.4rem;
+
+        & .social-link {
+            &__icon {
+                font-size: 3.2rem;
+            }
         }
     }
 }
