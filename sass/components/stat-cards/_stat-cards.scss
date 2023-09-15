@@ -5,4 +5,10 @@
     display: grid;
     justify-content: center;
     row-gap: 9.1rem;
+
+    @include media-screen-min($bp-desktop) {
+        grid-template-columns: repeat(2, max-content);
+        grid-template-rows: max-content;
+        column-gap: 34.1rem;
+    }
 }
