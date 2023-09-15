@@ -266,6 +266,19 @@ body {
   overflow-x: hidden;
 }
 
+.section-grid {
+  display: grid;
+  grid-template-columns: 32rem;
+  justify-content: center;
+  justify-items: center;
+}
+.section-grid__item-2-of-2 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.6rem;
+}
+
 .header {
   background-color: beige;
 }
@@ -276,22 +289,42 @@ body {
 
 .grow {
   background-color: var(--color-very-pale-blue);
+  padding: 10.2rem 0rem 8.1rem;
 }
-
+.grow__illustration {
+  width: 25.9rem;
+  margin-bottom: 7.4rem;
+}
 .conversation {
-  background-color: bisque;
+  background-color: var(--color-white);
+  padding: 16.5rem 0rem 22.3rem;
 }
-
+.conversation__illustration {
+  width: 26.6rem;
+  margin-bottom: 8.6rem;
+}
 .users {
   background-color: var(--color-very-pale-blue);
+  padding: 1.6rem 0rem 17.2rem;
 }
-
+.users__illustration {
+  width: 26.7rem;
+  margin-bottom: 7.9rem;
+}
 .cta {
-  background-color: bisque;
+  background-color: var(--color-white);
+  padding: 10.8rem 0rem 30.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 4rem;
+  text-align: center;
 }
 
 .footer {
   background-color: var(--color-very-dark-cyan);
+  color: var(--color-white);
+  padding: 5.6rem 0rem 4.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */

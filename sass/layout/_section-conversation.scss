@@ -1,3 +1,11 @@
 .conversation {
-    background-color: bisque;
+    background-color: var(--color-white);
+    padding: 16.5rem 0rem 22.3rem;
+
+    &__illustration {
+        width: 26.6rem;
+        margin-bottom: 8.6rem;
+    }
+
+    &__content {}
 }
