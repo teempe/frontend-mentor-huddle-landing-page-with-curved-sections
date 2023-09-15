@@ -7,9 +7,12 @@
     &__item-1-of-2 {}
 
     &__item-2-of-2 {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        row-gap: 1.6rem;
+        &--section-content {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            row-gap: 1.6rem;
+        }
+
     }
 }
