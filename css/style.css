@@ -280,7 +280,14 @@ body {
 }
 
 .header {
-  background-color: beige;
+  background-color: var(--color-white);
+  padding: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  width: 9.6rem;
 }
 
 .hero {
@@ -337,6 +344,7 @@ body {
   margin-bottom: 3.2rem;
 }
 .footer__logo {
+  width: 20rem;
   margin-bottom: 1.6rem;
 }
 .footer__contact {
