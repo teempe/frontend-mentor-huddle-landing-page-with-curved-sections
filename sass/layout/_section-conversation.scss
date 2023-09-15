@@ -8,4 +8,12 @@
     }
 
     &__content {}
+
+    @include media-screen-min($bp-desktop) {
+        &__illustration {
+            width: 53.1rem;
+            height: 37.8rem;
+            margin-bottom: 0;
+        }
+    }
 }

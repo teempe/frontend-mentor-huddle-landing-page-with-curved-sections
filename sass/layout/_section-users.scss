@@ -27,4 +27,11 @@
         position: absolute;
         bottom: -10.1rem;
     }
+
+    @include media-screen-min($bp-desktop) {
+        &__illustration {
+            width: 53.4rem;
+            margin-bottom: 0;
+        }
+    }
 }

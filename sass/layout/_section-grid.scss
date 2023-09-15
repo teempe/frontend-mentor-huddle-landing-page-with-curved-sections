@@ -13,6 +13,31 @@
             flex-direction: column;
             row-gap: 1.6rem;
         }
+    }
 
+    @include media-screen-min($bp-desktop) {
+        grid-template-columns: repeat(2, 56rem);
+        align-items: center;
+        // column-gap: 8rem;
+        max-width: 120rem;
+        margin: 0 auto;
+        // justify-content: space-around;
+
+        &__item-1-of-2 {
+        }
+
+        &__item-2-of-2 {
+            &--section-content {
+                text-align: left;
+                row-gap: 2.2rem;
+                max-width: 52rem;
+                justify-self: end;
+            }
+
+            &--order {
+                order: -1;
+                
+            }
+        }
     }
 }

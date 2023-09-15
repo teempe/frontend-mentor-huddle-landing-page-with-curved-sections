@@ -38,6 +38,7 @@ body {
   line-height: 1.5em;
   color: var(--color-very-dark-cyan);
   background-color: var(--color-very-pale-blue);
+  background-color: orange;
   display: grid;
   justify-content: center;
   align-content: center;
@@ -137,6 +138,12 @@ body {
 .btn-primary:hover, .btn-primary:active {
   background-color: var(--color-light-pink);
 }
+@media only screen and (min-width: 90em) {
+  .btn-primary:link, .btn-primary:visited {
+    font-size: 2rem;
+    padding: 2.5rem 10rem;
+  }
+}
 
 .btn-secondary:link, .btn-secondary:visited {
   font-size: 0.9rem;
@@ -151,6 +158,12 @@ body {
 .btn-secondary:hover, .btn-secondary:active {
   color: var(--color-light-pink);
   border: 0.1rem solid var(--color-light-pink);
+}
+@media only screen and (min-width: 90em) {
+  .btn-secondary:link, .btn-secondary:visited {
+    font-size: 1.6rem;
+    padding: 0.7rem 3.15rem;
+  }
 }
 
 .btn-form {
@@ -204,11 +217,44 @@ body {
 .stat-card--messages p:last-of-type {
   font-size: 1.4rem;
 }
+@media only screen and (min-width: 90em) {
+  .stat-card--communities {
+    grid-template-rows: 4rem repeat(2, min-content);
+  }
+  .stat-card--communities img {
+    width: 5.6rem;
+  }
+  .stat-card--communities p:first-of-type {
+    font-size: 9.6rem;
+  }
+  .stat-card--communities p:last-of-type {
+    font-size: 2.4rem;
+  }
+  .stat-card--messages {
+    grid-template-rows: 3.7rem repeat(2, min-content);
+  }
+  .stat-card--messages img {
+    width: 4.9rem;
+  }
+  .stat-card--messages p:first-of-type {
+    font-size: 9.6rem;
+  }
+  .stat-card--messages p:last-of-type {
+    font-size: 2.4rem;
+  }
+}
 
 .stat-cards {
   display: grid;
   justify-content: center;
   row-gap: 9.1rem;
+}
+@media only screen and (min-width: 90em) {
+  .stat-cards {
+    grid-template-columns: repeat(2, max-content);
+    grid-template-rows: max-content;
+    column-gap: 34.1rem;
+  }
 }
 
 .form-subscribe {
@@ -230,6 +276,11 @@ body {
   border-radius: 0.5rem;
   padding-left: 1.6rem;
 }
+@media only screen and (min-width: 90em) {
+  .form-subscribe__input {
+    font-size: 1.4rem;
+  }
+}
 .form-subscribe__btn {
   grid-row: 2/3;
   grid-column: 2/-1;
@@ -244,6 +295,21 @@ body {
   color: var(--color-light-red);
   position: absolute;
   top: 5rem;
+}
+@media only screen and (min-width: 90em) {
+  .form-subscribe {
+    grid-template-columns: 32rem 16rem;
+    grid-template-rows: 4.8rem;
+    column-gap: 4rem;
+  }
+  .form-subscribe__input {
+    grid-row: 1/1;
+    grid-column: 1/2;
+  }
+  .form-subscribe__btn {
+    grid-row: 1/1;
+    grid-column: 2/-1;
+  }
 }
 
 .contact-link {
@@ -287,23 +353,67 @@ body {
   font-size: 2.3rem;
   color: currentcolor;
 }
+@media only screen and (min-width: 90em) {
+  .social-links {
+    gap: 2.4rem;
+  }
+  .social-links .social-link__icon {
+    font-size: 3.2rem;
+  }
+}
 
 .container {
   max-width: 37.5rem;
   overflow-x: hidden;
 }
-
-.section-grid {
-  display: grid;
-  grid-template-columns: 32rem;
-  justify-content: center;
-  justify-items: center;
+@media only screen and (min-width: 90em) {
+  .container {
+    max-width: 144rem;
+  }
 }
-.section-grid__item-2-of-2--section-content {
+
+.section {
+  max-width: 32rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 28rem 1fr;
+  gap: 4rem;
+  justify-items: center;
+  align-items: center;
+}
+.section__item-1-of-2 {
+  background-color: bisque;
+}
+.section__item-2-of-2 {
+  background-color: aquamarine;
   text-align: center;
   display: flex;
   flex-direction: column;
-  row-gap: 1.6rem;
+  gap: 1.6rem;
+}
+@media only screen and (min-width: 90em) {
+  .section {
+    max-width: 120rem;
+    margin: 0 auto;
+    grid-template-columns: 1fr 52rem;
+    grid-template-rows: 56rem;
+    gap: 12rem;
+  }
+  .section__item-2-of-2 {
+    text-align: left;
+    gap: 2.4rem;
+  }
+  .section--reverse {
+    grid-template-columns: 52rem 1fr;
+  }
+  .section--reverse > .section__item-2-of-2 {
+    order: -1;
+  }
+  .section--narrow {
+    max-width: 118rem;
+    gap: 10rem;
+  }
 }
 
 .header {
@@ -367,6 +477,12 @@ body {
   position: absolute;
   bottom: -5.2rem;
 }
+@media only screen and (min-width: 90em) {
+  .grow__illustration {
+    width: 51.7rem;
+    margin-bottom: 0;
+  }
+}
 
 .conversation {
   background-color: var(--color-white);
@@ -376,6 +492,14 @@ body {
   width: 26.6rem;
   margin-bottom: 8.6rem;
 }
+@media only screen and (min-width: 90em) {
+  .conversation__illustration {
+    width: 53.1rem;
+    height: 37.8rem;
+    margin-bottom: 0;
+  }
+}
+
 .users {
   background-color: var(--color-very-pale-blue);
   padding: 1.6rem 0rem 11.4rem;
@@ -400,6 +524,12 @@ body {
   height: 10.1rem;
   position: absolute;
   bottom: -10.1rem;
+}
+@media only screen and (min-width: 90em) {
+  .users__illustration {
+    width: 53.4rem;
+    margin-bottom: 0;
+  }
 }
 
 .cta {
