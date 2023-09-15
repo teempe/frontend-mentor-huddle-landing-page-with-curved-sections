@@ -32,6 +32,15 @@
     &:active {
         background-color: var(--color-light-pink);
     }
+
+    @include media-screen-min($bp-desktop) {
+        &:link,
+        &:visited {
+            font-size: 2rem;
+
+            padding: 2.5rem 10rem;
+        }
+    }
 }
 
 .btn-secondary {
@@ -55,6 +64,15 @@
     &:active {
         color: var(--color-light-pink);
         border: 0.1rem solid var(--color-light-pink);
+    }
+
+    @include media-screen-min($bp-desktop) {
+        &:link,
+        &:visited {
+            font-size: 1.6rem;
+    
+            padding: 0.7rem 3.15rem;
+        }
     }
 }
 
