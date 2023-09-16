@@ -23,5 +23,24 @@
     @include media-screen-min($bp-desktop) {
         font-size: 2rem;
         line-height: 3rem;
+
+        padding: 15.3rem 21.2rem 29.8rem;
+
+        &__header {
+            margin-bottom: 11rem;
+    
+            & > .heading-1 {
+                margin-bottom: 2.1rem;
+            }
+    
+            & > p {
+                max-width: 60rem;
+                margin: 0 auto 4.9rem auto;
+            } 
+        }
+
+        &__illustration {
+            margin-bottom: 12.6rem;
+        }
     }
 }
