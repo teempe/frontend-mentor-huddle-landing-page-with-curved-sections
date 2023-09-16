@@ -4,15 +4,6 @@
     padding: 5.6rem 0rem 4.6rem; //TODO: check spacing for mobile
     position: relative;
 
-    & .section {
-        gap: 10.4rem;
-
-        &__item-2-of-2 {
-            text-align: left;
-            gap: 0rem;
-        }
-    }
-
     &__newsletter {
         & > .heading-2 {
             margin-bottom: 1.6rem;
@@ -45,31 +36,9 @@
     }
 
     @include media-screen-min($bp-desktop) {
-        padding: 12.2rem 0rem 5.3rem;
-        background-color: red;
+        padding: 12.2rem 0rem 4rem;
 
-        & .section {
-            gap: 10.4rem;
-    
-            &__item-2-of-2 {
-                // text-align: left;
-                // gap: 0rem;
-            }
-        }
-
-        & .section--reverse {
-            grid-template-columns: 34rem 52rem;
-            align-items: start;
-            justify-items: start;
-            column-gap: 34rem;
-        }
-
-
-        &__newsletter {
-            & > .heading-2 {
-                // margin-bottom: 1.6rem;
-            }
-    
+        &__newsletter {    
             & > p {
                 max-width: 34.4rem;
                 margin-bottom: 4rem;
@@ -82,9 +51,6 @@
         }
     
         &__contact {
-            // display: flex;
-            // flex-direction: column;
-            // row-gap: 1.6rem;
             margin: 2.4rem 0rem 8rem;
         }
 

@@ -21,18 +21,22 @@
         gap: 1.6rem;
     }
 
+    &--footer {
+        gap: 10.4rem;
+
+        & .section__item-2-of-2 {
+            text-align: left;
+            gap: 0rem;
+        }
+    }
+
     @include media-screen-min($bp-desktop) {
         max-width: 120rem;
         margin: 0 auto;
 
         grid-template-columns: 1fr 52rem;
-        // grid-template-rows: 56rem;
         gap: 12rem;
-        
-        &__item-1-of-2 {
-            
-        }
-        
+                
         &__item-2-of-2 {
             text-align: left;
             gap: 2.4rem;
@@ -49,6 +53,17 @@
         &--narrow {
             max-width: 118rem;
             gap: 10rem;
+        }
+
+        &--footer {
+            grid-template-columns: 34rem 52rem;
+            align-items: start;
+            justify-items: start;
+            column-gap: 34rem;
+    
+            & .section__item-2-of-2 {
+                order: -1;
+            }
         }
     }
 }
