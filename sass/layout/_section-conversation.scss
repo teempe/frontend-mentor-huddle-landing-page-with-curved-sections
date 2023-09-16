@@ -1,13 +1,10 @@
 .conversation {
     background-color: var(--color-white);
-    padding: 19rem 0rem 22.3rem; //TODO: check spacing for mobile
+    padding: 14.6rem 0rem 20rem;
 
     &__illustration {
         width: 26.6rem;
-        margin-bottom: 8.6rem;
     }
-
-    // &__content {}
 
     @include media-screen-min($bp-desktop) {
         padding: 38.6rem 0rem 19rem;

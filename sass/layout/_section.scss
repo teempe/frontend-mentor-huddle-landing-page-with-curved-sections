@@ -9,12 +9,7 @@
     justify-items: center;
     align-items: center;
 
-    &__item-1-of-2 {
-        background-color: bisque;
-    }
-
     &__item-2-of-2 {
-        background-color: aquamarine;
         text-align: center;
         display: flex;
         flex-direction: column;

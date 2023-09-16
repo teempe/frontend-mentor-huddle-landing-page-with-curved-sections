@@ -1,14 +1,11 @@
 .users {
     background-color: var(--color-very-pale-blue);
-    padding: 1.6rem 0rem 11.4rem; //TODO: check spacing for mobile
+    padding: 0rem 0rem 11.4rem;
     position: relative;
 
     &__illustration {
         width: 26.7rem;
-        // margin-bottom: 7.9rem;
     }
-
-    &__content {}
 
     &::before {
         content: "";
@@ -16,7 +13,7 @@
         width: 100%;
         height: 10.3rem;
         position: absolute;
-        top: -10.3rem;
+        top: -9.8rem;
         overflow: hidden;
     }
 
@@ -34,24 +31,17 @@
 
         &__illustration {
             width: 53.4rem;
-            // margin-bottom: 0;
         }
 
         &::before {
-            // content: "";
             background: url('../images/bg-section-top-desktop-2.svg');
-            // width: 100%;
             height: 15.2rem;
-            // position: absolute;
             top: -15.2rem;
         }
     
         &::after {
-            // content: "";
             background: url('../images/bg-section-bottom-desktop-2.svg');
-            // width: 100%;
             height: 13.9rem;
-            // position: absolute;
             bottom: -11.6rem;
         }
     }
