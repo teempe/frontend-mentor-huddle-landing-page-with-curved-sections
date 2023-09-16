@@ -1,6 +1,6 @@
 .cta {
     background-color: var(--color-white);
-    padding: 16.7rem 0rem 30.2rem;
+    padding: 16.7rem 0rem 30.2rem; //TODO: check spacing for mobile
 
     display: flex;
     flex-direction: column;
@@ -8,4 +8,8 @@
     row-gap: 4rem;
 
     text-align: center;
+
+    @include media-screen-min($bp-desktop) {
+        padding: 28rem 0rem 30.2rem; //TODO: check bottom padding when footer is ready
+    }
 }
